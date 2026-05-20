@@ -1,0 +1,14 @@
+
+
+services:
+  app:
+    build: .
+    container_name: fastapi_container
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - .:/app
+
+    restart: always
