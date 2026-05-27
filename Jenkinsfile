@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t fastapi-app .'
+                sh 'docker build -t fastapi-app .'
             }
         }
 
